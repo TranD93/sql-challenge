@@ -7,14 +7,14 @@ CREATE TABLE departments
 SELECT * FROM departments
 
 CREATE TABLE dept_emp
-	(emp_no INT NOT NULL,
+	(emp_no INT PRIMARY KEY NOT NULL,
 	 dept_no VARCHAR);
 	
 SELECT * FROM dept_emp
 
 CREATE TABLE dept_manager
 	(dept_no VARCHAR,
-	 emp_no INT NOT NULL);
+	 emp_no INT PRIMARY KEY NOT NULL);
 	
 SELECT * FROM dept_manager
 
@@ -30,7 +30,7 @@ CREATE TABLE employees
 SELECT * FROM employees
 
 CREATE TABLE salaries
-	(emp_no INT NOT NULL,
+	(emp_no INT PRIMARY KEY NOT NULL,
 	salary INT NOT NULL);
 	
 SELECT * FROM salaries
